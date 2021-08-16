@@ -1,0 +1,245 @@
+body{
+    font-family: 'Playfair Display', serif;
+    
+}
+
+header{
+    background:rgba(000, 000, 000, 1);
+    padding:18px 0 ;
+}
+
+.cabecario{
+   position: relative;
+   width: 940px;
+   margin: 0 auto;
+}
+
+.cabecario img{
+    width: 125px; ;
+}
+
+/*editar menu*/
+
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/*banner*/
+
+.banner{
+    position: absolute;
+    width: 100%;
+    height: 880px;
+    
+}
+
+.conatainer-chamada{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    top: 271px;
+    
+}
+
+.conatainer-chamada h1{
+    font-size: 58px;
+    line-height: 77px;
+    text-align: right;
+
+    color: white;
+}
+
+.conatainer-chamada h2{
+    font-size: 48px;
+    line-height: 77px;
+    text-align: right;
+
+    color: white;
+}
+
+
+
+
+
+/*cardapio */
+.fundo-cardapio{
+    width: 100%;
+    height: 500px;
+    padding-top: 5em;
+ }
+
+
+.caixa-cardapio{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.caixa-cardapio h2{
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 1em;
+
+}
+
+.conteudo-cardapio{
+    display: flex;
+    padding: 0 0;
+    
+
+}
+
+.conteudo-cardapio img{
+    width: 88px;
+    height: 275px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.conteudo-cardapio h3{
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.conteudo-cardapio h4{
+    font-size: 16px;
+    line-height: 22px;
+}
+
+
+
+/*fotos*/
+
+.fundo-fotos{
+    width: 100%;
+    height: 490px;
+    position: absolute;
+}
+
+.caixa-fotos{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 4em 0;
+}
+
+.caixa-fotos h2{
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 1em;
+    color: white;
+}
+
+.conteudo-fotos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.conteudo-fotos li img{
+    
+   margin: 0 20px;
+    
+}
+
+.navegação{
+    position: relative;
+    margin-top: 30px ;
+    display: flex;
+    justify-content: center;
+}
+
+.dot1, .dot3{
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 100%;
+    margin: 0 10px;
+    transition: 0.25s;
+}
+
+.dot2{
+    width: 15px;
+    height: 15px;
+    background: #58876d;
+    border-radius: 100%;
+    margin: 0 10px;
+    transition: 0.25s;
+}
+
+/*foother*/
+
+.fundo-foother{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+}
+
+.contato{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 4em 0;
+    
+}
+
+.corpo-foother{
+
+    display: inline-flex;
+}
+
+.contato h2{
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 1em;
+    color: black;
+}
+
+.contato h3{
+    text-align: left;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.015em;
+    padding-top: 1em;
+    
+}
+
+.figure{
+    display: inline-flex;
+}
+
+.figure a img{
+    padding: 20px 20px 0 0;
+}
+
+.mapa{
+    position: relative;
+    padding-top: 1em;
+    left: 200px;
+    filter: drop-shadow(10px 10px 30px rgba(88, 135, 109, 0.3));
+    
+}
+
+.linhas-rodape{
+    position: relative;
+    width: 100%;
+}
+
