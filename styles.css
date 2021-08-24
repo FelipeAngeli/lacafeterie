@@ -8,10 +8,17 @@ header{
     padding:18px 0 ;
 }
 
-.cabecario{
+/*caixa*/
+.caixa-cardapio, .caixa-fotos, .contato{
    position: relative;
    width: 940px;
    margin: 0 auto;
+}
+
+.cabecario{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .cabecario img{
@@ -26,20 +33,79 @@ nav{
     right: 0;
 }
 
-nav li{
-    display: inline;
+nav ul li{
+    display: inline-block;
     margin: 0 0 0 15px;
 }
 
-nav a{
+nav ul li a{
     color: white;
     font-size: 18px;
     text-decoration: none;
+   
+
 }
 
-nav a:hover{
-    text-decoration: underline;
+nav a:hover, a:after{
+    text-decoration: underline 3px;
+    text-underline-offset:3px;
 }
+
+/*hamburguer*/
+
+.checkbtn {
+	font-size: 20px;
+	
+	float: right;
+	line-height: 40px;
+	margin-right: 20px;
+	cursor: pointer;
+	
+}
+#check {
+	display: none;
+}
+@media (max-width: 952px){
+	
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn {
+		display: block;
+
+        
+	}
+	ul{
+		position:fixed;
+		width: 100%;
+		height: 50vh;
+		background: red;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: #5434af;
+	}
+	#check:checked ul {
+		left: 0;
+	}
+}
+
+
+
 
 /*banner*/
 
@@ -52,30 +118,24 @@ nav a:hover{
 
 .conatainer-chamada{
     position: relative;
-    width: 940px;
-    margin: 0 auto;
+    margin-right: 10%;
     top: 271px;
-    
 }
 
 .conatainer-chamada h1{
     font-size: 58px;
     line-height: 77px;
     text-align: right;
-
     color: white;
 }
-
+    
 .conatainer-chamada h2{
     font-size: 48px;
     line-height: 77px;
     text-align: right;
-
     color: white;
 }
-
-
-
+    
 
 
 /*cardapio */
@@ -85,11 +145,7 @@ nav a:hover{
     padding-top: 5em;
  }
 
-
 .caixa-cardapio{
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
     padding: 3em 0;
 }
 
@@ -103,8 +159,6 @@ nav a:hover{
 .conteudo-cardapio{
     display: flex;
     padding: 0 0;
-    
-
 }
 
 .conteudo-cardapio img{
@@ -125,10 +179,7 @@ nav a:hover{
     line-height: 22px;
 }
 
-
-
 /*fotos*/
-
 .fundo-fotos{
     width: 100%;
     height: 490px;
@@ -136,9 +187,6 @@ nav a:hover{
 }
 
 .caixa-fotos{
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
     padding: 4em 0;
 }
 
@@ -155,9 +203,7 @@ nav a:hover{
     align-items: center;
 }
 .conteudo-fotos li img{
-    
    margin: 0 20px;
-    
 }
 
 .navegação{
@@ -194,15 +240,10 @@ nav a:hover{
 }
 
 .contato{
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
     padding: 4em 0;
-    
 }
 
 .corpo-foother{
-
     display: inline-flex;
 }
 
@@ -243,3 +284,9 @@ nav a:hover{
     width: 100%;
 }
 
+/*media query*/
+
+@media (max-width: 999px){
+  
+  
+}
